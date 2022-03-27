@@ -1,24 +1,25 @@
 import React,{Component} from "react";
 import Container from "../../node_modules/react-bootstrap/Container";
 import Row from "../../node_modules/react-bootstrap/Row";
+import Card from "../../node_modules/react-bootstrap/Card";
 import Col from "../../node_modules/react-bootstrap/Col";
 import Button from "../../node_modules/react-bootstrap/Button";
 
 class MoviesS1 extends Component{
     render(){
         return(    
-            <Container fluid className="d-flex minh-50vh align-items-center py-5 border-top border-secondary pt-5">
-            <Row className="mx-0 w-100 mt-5">
-                <Col xs={{span:12,order:1}} md={{span:7,order:2}} className="minh-25vh"></Col>
-                <Col xs={{span:12,order:2}} md={{span:5,order:1}} className="minh-50vh d-flex align-items-center">
-                    <div className="w-100 text-center text-md-start">
-                        <h5 className="text-white">
+            <Container fluid className="movies-s1 d-flex minh-50vh align-items-center py-5 border-top border-secondary pt-5">
+            <Row className="mx-0 w-100 my-5">
+                <Col xs={{span:12,order:1}} md={{span:7,order:2}} lg={{span:8,order:2}} className="minh-25vh"></Col>
+                <Col xs={{span:12,order:2}} md={{span:5,order:1}} lg={{span:4,order:1}} className="minh-50vh d-flex align-items-center">
+                    <Card className="text-center text-md-start p-4 border-2 border-info opacity-8 bg-dark">
+                        <h5 className="text-secondary">
                             Sed ut perspiciatis
                         </h5>
-                        <h2 className="dispaly-6 fw-bold text-white-50 text-shadow">
+                        <h2 className="dispaly-6 fw-bold text-info text-shadow">
                             Unde omnis iste
                         </h2>
-                        <p className="text-white">
+                        <p className="text-white initialism">
                             Natus error sit voluptatem accusantium doloremque laudantium, 
                             totam rem aperiam, eaque ipsa quae ab illo inventore veritatis 
                             et quasi architecto beatae vitae dicta sunt explicabo. Nemo 
@@ -26,7 +27,7 @@ class MoviesS1 extends Component{
                             fugit, sed quia consequuntur magni dolores eos qui ratione 
                             voluptatem sequi nesciunt. Neque porro quisquam est
                         </p>
-                    </div>
+                    </Card>
                 </Col>
             </Row>
         </Container>

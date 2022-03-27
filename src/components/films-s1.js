@@ -9,21 +9,21 @@ import Button from "../../node_modules/react-bootstrap/Button";
 class FilmsS1 extends Component{
     render(){
         return(    
-            <Container fluid className="d-flex minh-100vh align-items-start py-5">
+            <Container fluid className="films-s1 d-flex minh-100vh align-items-start py-5">
                 <Row className="mx-0 w-100 mt-5">
                     <Col xs={12} sm={5} md={4} lg={3} className="pt-5">
-                        <Card className="opacity-8">
-                            <Card.Header className="bg-light">
-                                <Card.Title className="text-secondary float-start">
+                        <Card className="opacity-8 border-info">
+                            <Card.Header className="bg-dark border-info">
+                                <Card.Title className="text-info float-start">
                                     Filter
                                 </Card.Title>   
-                                <Button variant="outline-secondary" size="sm" className="float-end rounded" 
+                                <Button variant="outline-info" size="sm" className="float-end rounded" 
                                     data-bs-toggle="collapse" 
                                     data-bs-target="#filters">
                                     +
                                 </Button>                         
                             </Card.Header>
-                            <Card.Body className="collapse show" id="filters">
+                            <Card.Body className="collapse show bg-dark text-info" id="filters">
                                 <Form className="small">
                                     <fieldset className="mb-3">
                                         <legend>
@@ -75,11 +75,11 @@ class FilmsS1 extends Component{
                                             type="checkbox"
                                             label="Cat"/>
                                     </fieldset>
-                                    <div className="w-100 text-end border-top pt-2">
-                                        <Button type="reset" variant="secondary" size="sm" className="rounded-pill">
+                                    <div className="w-100 text-end border-top border-info pt-2">
+                                        <Button type="reset" variant="info" size="sm" className="rounded-pill me-2">
                                             Clear
                                         </Button>
-                                        <Button type="submit" variant="secondary" size="sm" className="rounded-pill">
+                                        <Button type="submit" variant="info" size="sm" className="rounded-pill">
                                             Filter
                                         </Button>
                                     </div>

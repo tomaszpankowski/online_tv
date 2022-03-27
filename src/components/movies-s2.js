@@ -1,23 +1,24 @@
 import React,{Component} from "react";
 import Container from "../../node_modules/react-bootstrap/Container";
 import Row from "../../node_modules/react-bootstrap/Row";
+import Card from "../../node_modules/react-bootstrap/Card";
 import Col from "../../node_modules/react-bootstrap/Col";
 
 class MoviesS2 extends Component{
     render(){
         return(    
-            <Container fluid className="d-flex bg-secondary minh-50vh align-items-center py-5 border-top ">
+            <Container fluid className="movies-s2 d-flex bg-secondary minh-50vh align-items-center py-5 border-top border-info">
                 <Row className="mx-0 w-100">
-                    <Col xs={12} md={6} className="minh-25vh d-none d-md-block"></Col>
-                    <Col xs={12} md={6} className="minh-50vh d-flex align-items-center">
-                        <div className="w-100 text-center text-md-start pt-5 text-shadow">
-                            <h5 className="text-white">
+                    <Col xs={12} md={7} lg={8} className="minh-25vh d-none d-md-block"></Col>
+                    <Col xs={12} md={5} lg={4} className="minh-50vh d-flex align-items-center">
+                        <Card className="text-center text-md-start p-4 bg-dark opacity-8 border border-2 border-info rounded-3 text-shadow">
+                            <h5 className="text-secondary">
                                 Lorem ipsum
                             </h5>
-                            <h2 className="dispaly-6 fw-bold text-white-50 text-shadow">
+                            <h2 className="dispaly-6 fw-bold text-info text-shadow">
                                 Dolor sit amet         
                             </h2>
-                            <p className="text-white">
+                            <p className="text-white initialism">
                                 Sed do eiusmod tempor incididunt ut labore et dolore magna 
                                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
                                 ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -26,7 +27,7 @@ class MoviesS2 extends Component{
                                 occaecat cupidatat non proident, sunt in culpa qui officia 
                                 deserunt mollit anim id est laborum.      
                             </p>
-                        </div>
+                        </Card>
                     </Col>
                 </Row>
             </Container>

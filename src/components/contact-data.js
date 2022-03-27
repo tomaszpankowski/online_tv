@@ -2,6 +2,7 @@ import React,{Component} from "react";
 import {Link} from "react-router-dom";
 import Container from "../../node_modules/react-bootstrap/Container";
 import Row from "../../node_modules/react-bootstrap/Row";
+import Card from "../../node_modules/react-bootstrap/Card";
 import Col from "../../node_modules/react-bootstrap/Col";
 import Button from "../../node_modules/react-bootstrap/Button";
 
@@ -16,16 +17,13 @@ class ContactData extends Component{
             </Link>;
         }
         return(        
-            <Container fluid className={"contact-data align-items-center p-0 d-flex minh-50vh "+this.props.classExt}>
+            <Container fluid className={"contact-s1 align-items-center p-0 py-5 d-flex minh-50vh "+this.props.classExt}>
                 <Row className="mx-auto text-center w-100 pt-5">
-                    <Col xs={10} sm={6} className="mx-auto text-dark p-0">
-                        <img alt="about"
-                            className="img-fluid w-75"
-                            src="img/contact/contact-data.png"/>
+                    <Col xs={12} md={5} lg={7} className="mx-auto text-dark p-0">
                     </Col>
-                    <Col xs={10} sm={6} className="mx-auto text-secondary p-0 d-flex align-items-center">
-                        <div className="p-5">
-                            <h1 className="display-4 fw-bold font-logo text-dark-gray">
+                    <Col xs={12} md={7} lg={5} className="mx-auto text-white p-5 d-flex align-items-center">
+                        <Card className="p-4 bg-dark border border-2 rounded-3 opacity-8 border-info">
+                            <h1 className="display-4 fw-bold font-logo text-info">
                                 Contact us
                             </h1>
                             <p className="initialism">
@@ -39,7 +37,7 @@ class ContactData extends Component{
                                 contact&#64;mail.it
                             </address>
                             {linking}
-                        </div>
+                        </Card>
                     </Col>
                 </Row>
             </Container>    
